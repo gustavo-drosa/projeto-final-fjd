@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://hbncvvni1b51"]
+
+[ext_resource type="Script" uid="uid://phn26m87hyhe" path="res://ui.gd" id="1_nt7q6"]
+
+[node name="UI" type="CanvasLayer" unique_id=2015697773]
+script = ExtResource("1_nt7q6")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=805205250]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1165009666]
+layout_mode = 2
+
+[node name="LivesLabel" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1584972472]
+layout_mode = 2
+
+[node name="ScoreLabel" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1172308288]
+layout_mode = 2
+
+[node name="ClueLabel" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1326018935]
+layout_mode = 2

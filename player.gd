@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var tile_size: int = 64
+@export var tile_size: int = 16
 @export var move_speed: float = 0.2
 
 # Guarda a posição do jogador em coordenadas inteiras da grelha (ex: x=2, y=3)
@@ -43,4 +43,5 @@ func move_grid(direction: Vector2i) -> void:
 	tween.finished.connect(func(): is_moving = false)
 
 func execute_dig() -> void:
-	GameManager.check_dig(grid_position);
+	print("Cavando em: ", grid_position, " | Tesouro está em: ", GameManager.treasure_grid_pos)
+	GameManager.check_dig(grid_position)
