@@ -42,3 +42,5 @@ func check_dig(player_grid_pos: Vector2i) -> void:
 		if current_lives <= 0:
 			is_action_blocked = true
 			game_over.emit()
+			
+			
