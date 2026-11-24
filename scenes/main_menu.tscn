@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://cowkae2cv7icv"]
+
+[ext_resource type="Script" uid="uid://b7y1cqs5gxvo4" path="res://scenes/main_menu.gd" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://ba1u173jmmn0c" path="res://assets/ui/compass.png" id="1_l6cm7"]
+
+[node name="MainMenu" type="Control" unique_id=1989635947]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ekxnf")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1334322852]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05882353, 0.09019608, 0.16470589, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1738896419]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer" unique_id=116322685]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "NOME DO JOGO
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1800399001]
+layout_mode = 2
+text = "Ajude o Pirata a encontrar o tesouro usando as noções de orientação."
+horizontal_alignment = 1
+
+[node name="CompassPreview" type="TextureRect" parent="VBoxContainer" unique_id=419860797]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture = ExtResource("1_l6cm7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StartButton" type="Button" parent="VBoxContainer" unique_id=298376387]
+custom_minimum_size = Vector2(200, 45)
+layout_mode = 2
+text = "Iniciar"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1066204899]
+custom_minimum_size = Vector2(200, 45)
+layout_mode = 2
+text = "Sair"

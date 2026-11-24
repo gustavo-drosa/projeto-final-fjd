@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://hbncvvni1b51"]
 
 [ext_resource type="Script" uid="uid://phn26m87hyhe" path="res://ui.gd" id="1_nt7q6"]
+[ext_resource type="Texture2D" uid="uid://ba1u173jmmn0c" path="res://assets/ui/compass.png" id="2_fvgn8"]
 
 [node name="UI" type="CanvasLayer" unique_id=2015697773]
 script = ExtResource("1_nt7q6")
@@ -20,3 +21,18 @@ layout_mode = 2
 
 [node name="ClueLabel" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1326018935]
 layout_mode = 2
+
+[node name="CompassRose" type="TextureRect" parent="." unique_id=1214842663]
+custom_minimum_size = Vector2(96, 96)
+custom_maximum_size = Vector2(256, 256)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -201.0
+offset_top = 36.0
+offset_right = -73.0
+offset_bottom = 164.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = ExtResource("2_fvgn8")

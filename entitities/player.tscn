@@ -33,15 +33,15 @@ height = 16.0
 script = ExtResource("1_x5vpb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=650117922]
+position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_rb8fl")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.24169011
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=1024230346]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1846501342]
-position = Vector2(0, 8)
+position = Vector2(0, -8)
 shape = SubResource("CapsuleShape2D_rb8fl")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1310619547]

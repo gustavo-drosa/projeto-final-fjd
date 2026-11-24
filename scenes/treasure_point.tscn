@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://dponkki4igfkm"]
 
-[ext_resource type="Texture2D" uid="uid://d2n6hia2oc3rg" path="res://icon.svg" id="1_rvgdn"]
+[ext_resource type="Texture2D" uid="uid://chtbgyb1bxlcd" path="res://assets/ui/treasure_x.png" id="1_rvgdn"]
 
 [node name="TreasurePoint" type="Marker2D" unique_id=928282955]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=678342100]
-position = Vector2(128, 32)
-scale = Vector2(0.25, 0.25)
+scale = Vector2(0.013, 0.013)
 texture = ExtResource("1_rvgdn")
